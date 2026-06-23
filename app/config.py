@@ -11,7 +11,7 @@ class Coordinates:
 
 @dataclass
 class Settings:
-    message: str = "Olá! Passando para avisar sobre a novidade do ROLÊ."
+    message_template_path: str = "templates/default.txt"
     delay_seconds: float = 0.7
     contacts_csv_path: str = "data/contacts.csv"
     manual_send: bool = True
